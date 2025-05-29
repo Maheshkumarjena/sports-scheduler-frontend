@@ -393,8 +393,14 @@ const UpcomingMatches = () => {
                      liveMatches;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 p-4">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50 ">
+
+<div className='h-fit-content w-[100vw] p-2 flex justify-center items-center bg-yellow-200'>
+  <p className='font-bold text-sm  text-gray-800 px-3 py-1 rounded-md shadow-sm'>
+    Since all leagues have been concluded, there isn't any match available for these particular leagues. But You can check the live matches.
+  </p>
+</div>
+ <div className="max-w-4xl pt-4 mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center mb-4">

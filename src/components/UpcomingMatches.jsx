@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { RefreshCw, Calendar, Clock, MapPin, Trophy, Wifi, WifiOff, ChevronDown, Globe, Play, Users } from 'lucide-react';
 
 const CACHE_DURATION = 10 * 60 * 1000; // 10 minutes to match backend cache
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://sport-scheduler-backend.onrender.com/api';
 
 const UpcomingMatches = () => {
   const [matches, setMatches] = useState([]);

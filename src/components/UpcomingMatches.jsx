@@ -423,7 +423,7 @@ const UpcomingMatches = () => {
                  'Live Matches'}
               </h1>
               {currentCompetitionInfo?.country && activeTab === 'upcoming' && (
-                <p className="text-sm text-gray-500 flex items-center justify-center mt-1">
+                <p className="text-sm text-gray-500  flex items-center justify-center mt-1">
                   <Globe className="w-4 h-4 mr-1" />
                   {currentCompetitionInfo.country}
                 </p>
@@ -442,9 +442,9 @@ const UpcomingMatches = () => {
                 <button
                   key={key}
                   onClick={() => handleTabChange(key)}
-                  className={`flex items-center space-x-2 px-4 py-2 rounded-md transition-all ${
+                  className={`flex items-center w-full space-x-2 px-4 py-2 rounded-md transition-all ${
                     activeTab === key 
-                      ? 'bg-green-500 text-white shadow-sm' 
+                      ? 'bg-green-500 text-white w-full shadow-sm' 
                       : 'text-gray-600 hover:bg-gray-100'
                   }`}
                 >
